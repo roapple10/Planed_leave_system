@@ -21,6 +21,10 @@ const nextConfig = {
     }
     return config;
   },
+  // Add this to ensure proper routing
+  async redirects() {
+    return [];
+  },
 };
 
 module.exports = nextConfig;

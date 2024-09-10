@@ -144,6 +144,13 @@ const LeaveRequest = () => {
 
   return (
     <Box sx={{ maxWidth: 400, margin: 'auto', mt: 4 }}>
+      <Button
+        onClick={() => router.push('/')}
+        variant="outlined"
+        sx={{ mb: 2 }}
+      >
+        返回首頁
+      </Button>
       <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
         <Image src="/logo.png" alt="Admazes Logo" width={50} height={50} />
         <Typography variant="h4" component="h1" sx={{ ml: 2 }}>

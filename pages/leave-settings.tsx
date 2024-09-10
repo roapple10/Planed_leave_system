@@ -4,6 +4,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import SaveIcon from '@mui/icons-material/Save';
 import AddIcon from '@mui/icons-material/Add';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 interface Employee {
   id: string;
@@ -18,6 +19,7 @@ interface Employee {
 }
 
 const LeaveSettings = () => {
+  const router = useRouter();
   const [employees, setEmployees] = useState<Employee[]>([]);
   const [openDialog, setOpenDialog] = useState(false);
   const [newEmployee, setNewEmployee] = useState<Employee>({
@@ -127,6 +129,13 @@ const LeaveSettings = () => {
   return (
     <Container maxWidth="lg">
       <Box sx={{ mt: 4, mb: 4 }}>
+        <Button
+          onClick={() => router.push('/')}
+          variant="outlined"
+          sx={{ mb: 2 }}
+        >
+          返回首頁
+        </Button>
         <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
           <Image src="/logo.png" alt="Admazes Logo" width={50} height={50} />
           <Typography variant="h4" component="h1" sx={{ ml: 2 }}>

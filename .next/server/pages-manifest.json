@@ -2,8 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/api/leave-request": "pages/api/leave-request.js",
+  "/": "pages/index.js",
   "/leave-request": "pages/leave-request.js",
-  "/leave-settings": "pages/leave-settings.js",
-  "/api/employees": "pages/api/employees.js"
+  "/api/employees": "pages/api/employees.js",
+  "/leave-settings": "pages/leave-settings.js"
 }
